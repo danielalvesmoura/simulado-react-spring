@@ -1,0 +1,9 @@
+.home {
+    padding: 0 2rem;
+}
+
+.home .container {
+    border: 1px solid grey;
+    height: calc(100vh - 200px);
+    padding: 1rem;
+}
