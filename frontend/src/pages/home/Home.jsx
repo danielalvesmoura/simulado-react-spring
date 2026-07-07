@@ -18,7 +18,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            <Header subtitulo="Listagem"/>
+            <Header/>
             <div className="container">
                 <p>Olá, você acessou esta página dia {data} às {hora}</p>
                 <Button texto="Realizar o Cálculo de Investimento"/>
