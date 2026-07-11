@@ -6,7 +6,7 @@ public class CalculoResponse {
     private BigDecimal valorTotal;
 
     public CalculoResponse(BigDecimal valorTotal) {
-        this.valorTotal = this.valorTotal;
+        this.valorTotal = valorTotal;
     }
 
     public BigDecimal getValorTotal() {
