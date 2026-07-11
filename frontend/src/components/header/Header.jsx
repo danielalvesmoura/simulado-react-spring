@@ -1,11 +1,11 @@
 import "./Header.css";
 
-function Header(props) {
+function Header({subtitulo}) {
     return (
         <div className="header">
             <h1>Cálculo de Investimento</h1>
-            {props.subtitulo !== null && (
-                <h2>- {props.subtitulo}</h2>
+            {subtitulo && (
+                <h2>- {subtitulo}</h2>
             )}
         </div>
     )

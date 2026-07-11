@@ -2,10 +2,10 @@ import "./Button.css";
 
 import {Link} from "react-router-dom";
 
-function Button(props) {
+function Button({texto, destino = "/listagem"}) {
     return (
-        <Link to="/listagem" className="button">
-            {props.texto}
+        <Link className="button">
+            {texto}
         </Link>
     )
 }
