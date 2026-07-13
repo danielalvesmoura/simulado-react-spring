@@ -1,3 +1,33 @@
 .listagem {
     padding: 0 2rem;
 }
+
+.valor-final {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.erro {
+    color: red;
+}
+
+.mensagem {
+    color: rgb(0, 153, 0);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: center;
+    border: 1px solid black;
+}

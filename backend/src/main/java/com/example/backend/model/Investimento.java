@@ -1,6 +1,7 @@
 package com.example.backend.model;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 import jakarta.persistence.*;
 
@@ -23,6 +24,9 @@ public class Investimento {
     @Column(nullable = false)
     private BigDecimal valorFinal;
 
+    @Column(name = "data_calculo", nullable = false, updatable = false)
+    private LocalDateTime dataCalculo;
+
     public Investimento() {};
 
     public Investimento(BigDecimal valorInicial, Integer prazoMeses, BigDecimal jurosMensal, BigDecimal valorFinal) {
@@ -32,8 +36,19 @@ public class Investimento {
         this.valorFinal = valorFinal;
     }
 
-      public Long getId() {
+    @PrePersist
+    public void definirDataCalculo() {
+        if(dataCalculo == null) {
+            dataCalculo = LocalDateTime.now();
+        }
+    }
+
+    public Long getId() {
         return id;
+    }
+
+    public LocalDateTime getDataCalculo() {
+        return dataCalculo;
     }
 
     public BigDecimal getValorInicial() {

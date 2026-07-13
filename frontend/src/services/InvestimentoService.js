@@ -1,4 +1,4 @@
-API_URL = "http://localhost:8080/api/investimentos"
+const API_URL = "http://localhost:8080/api/investimentos";
 
 async function tratarResposta(response) {
     if(!response.ok) {

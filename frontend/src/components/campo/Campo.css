@@ -1,13 +1,18 @@
-.button {
-    background-color: rgb(117, 179, 75);
-    border: 2px solid rgb(109, 109, 109);
-    padding: .5rem 1rem;
-    border-radius: .5rem;
-    font-weight: 800;
-    color: white;
-    text-decoration: none;
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20rem;
+    margin-bottom: 1rem;
 }
 
-.button:hover {
-    cursor: pointer;
+.campo label {
+    font-weight: 600;
+}
+
+.campo input {
+    border-radius: 1rem;
+    padding: .3rem .5rem;
+    border: 2px solid rgb(77, 77, 77);
+    font-size: 1.3rem;
 }

@@ -22,7 +22,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/investimentos")
-@CrossOrigin(origins = "https://localhost:3306")
+@CrossOrigin(origins = "http://localhost:3000")
 public class InvestimentoController {
     private final InvestimentoService service;
 

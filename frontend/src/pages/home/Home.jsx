@@ -21,7 +21,7 @@ const Home = () => {
             <Header/>
             <div className="container">
                 <p>Olá, você acessou esta página dia {data} às {hora}</p>
-                <Button texto="Realizar o Cálculo de Investimento"/>
+                <Button texto="Realizar o Cálculo de Investimento" destino="/listagem"/>
             </div>
         </div>
     )

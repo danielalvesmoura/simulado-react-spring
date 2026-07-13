@@ -3,17 +3,17 @@ package com.example.backend.dto;
 import java.math.BigDecimal;
 
 public class CalculoResponse {
-    private BigDecimal valorTotal;
+    private BigDecimal valorFinal;
 
-    public CalculoResponse(BigDecimal valorTotal) {
-        this.valorTotal = valorTotal;
+    public CalculoResponse(BigDecimal valorFinal) {
+        this.valorFinal = valorFinal;
     }
 
-    public BigDecimal getValorTotal() {
-        return this.valorTotal;
+    public BigDecimal getValorFinal() {
+        return this.valorFinal;
     }
 
-    public void setValorTotal(BigDecimal valorTotal) {
-        this.valorTotal = valorTotal;
+    public void setValorFinal(BigDecimal valorFinal) {
+        this.valorFinal = valorFinal;
     }
 }

@@ -2,12 +2,28 @@ import "./Button.css";
 
 import {Link} from "react-router-dom";
 
-function Button({texto, destino = "/listagem"}) {
+function Button({texto, largura, destino, tipo, disabled, onClick}) {
+    if(destino) {
+        return (
+            <Link className="button" to={destino}>
+                {texto}
+            </Link>
+        )
+    }
+
     return (
-        <Link className="button">
+        <button 
+            className="button" 
+            type={tipo} 
+            style={{"--largura": largura}}
+            disabled={disabled}
+            onClick={onClick}
+        >
             {texto}
-        </Link>
+        </button>
     )
+    
+    
 }
 
 export default Button;
